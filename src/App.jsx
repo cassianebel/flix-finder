@@ -48,7 +48,7 @@ function App() {
       <header className="film-strip">
         <div className="flex justify-between gap-2 text-chartreuse-300 ">
           <NavLink
-            to="/search"
+            to="/flix-finder/search"
             className="rounded-full hover:text-chartreuse-200 focus:outline-none focus:ring-1 focus:ring-chartreuse-300 py-1 px-3 "
           >
             <div className="flex gap-2 text-3xl">
@@ -91,13 +91,13 @@ function App() {
                     ? "text-zinc-50 flex gap-1 items-center rounded-full focus:outline-none focus:ring-1 focus:ring-chartreuse-300 py-1 px-3"
                     : "hover:text-chartreuse-200 flex gap-1 items-center rounded-full focus:outline-none focus:ring-1 focus:ring-chartreuse-300 py-1 px-3"
                 }
-                to="/watchlist"
+                to="/flix-finder/watchlist"
               >
                 <FaHeart />
                 Watch List
               </NavLink>
               <NavLink
-                to="/search"
+                to="/flix-finder/search"
                 className={({ isActive }) =>
                   isActive
                     ? "text-zinc-50 flex gap-1 items-center rounded-full focus:outline-none focus:ring-1 focus:ring-chartreuse-300 py-1 px-3"
@@ -108,7 +108,7 @@ function App() {
                 Search
               </NavLink>
               <NavLink
-                to="/trending"
+                to="/flix-finder/trending"
                 className={({ isActive }) =>
                   isActive
                     ? "text-zinc-50 flex gap-1 items-center rounded-full focus:outline-none focus:ring-1 focus:ring-chartreuse-300 py-1 px-3"
@@ -118,7 +118,7 @@ function App() {
                 <HiTrendingUp /> Trending
               </NavLink>
               <NavLink
-                to="/genres"
+                to="/flix-finder/genres"
                 className={({ isActive }) =>
                   isActive
                     ? "text-zinc-50 flex gap-1 items-center rounded-full focus:outline-none focus:ring-1 focus:ring-chartreuse-300 py-1 px-3"
@@ -137,27 +137,27 @@ function App() {
           element={<Navigate to="/search" replace={true} />}
         ></Route>
         <Route
-          path="/search"
+          path="/flix-finder/search"
           element={<Search watchList={watchList} setWatchList={setWatchList} />}
         ></Route>
         <Route
-          path="/watchlist"
+          path="/flix-finder/watchlist"
           element={
             <WatchList watchList={watchList} setWatchList={setWatchList} />
           }
         ></Route>
         <Route
-          path="/trending"
+          path="/flix-finder/trending"
           element={
             <TrendingList watchList={watchList} setWatchList={setWatchList} />
           }
         ></Route>
         <Route
-          path="/genres"
+          path="/flix-finder/genres"
           element={<Genres watchList={watchList} setWatchList={setWatchList} />}
         ></Route>
         <Route
-          path="*"
+          path="/flix-finder/*"
           element={<Navigate to="/search" replace={true} />}
         ></Route>
       </Routes>
