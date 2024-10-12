@@ -106,7 +106,7 @@ const WatchList = ({ watchList, setWatchList }) => {
         <p className="text-center mx-7 text-2xl">
           Your watch list is empty. Check out what's{" "}
           <NavLink
-            to="/trending"
+            to="/flix-finder/trending"
             className="text-chartreuse-300 hover:text-chartreuse-200 focus:outline-none focus:underline hover:underline"
           >
             Trending
