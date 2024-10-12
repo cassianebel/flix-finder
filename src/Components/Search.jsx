@@ -54,7 +54,11 @@ const Search = ({ watchList, setWatchList }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchSearch(searchInput.current.value);
-    navigate(`/search?query=${encodeURIComponent(searchInput.current.value)}`);
+    navigate(
+      `/flix-finder/search?query=${encodeURIComponent(
+        searchInput.current.value
+      )}`
+    );
   };
 
   const fetchMore = async (newPage) => {
