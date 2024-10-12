@@ -1,8 +1,9 @@
-# React + Vite
+# Flix Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Flix Finder is a movie and TV show discovery app built with Vite, React, Tailwind CSS, and the TMDB API. Whether you’re searching for your next favorite film, exploring trending content, browsing by genres, or managing your watchlist, Flix Finder has you covered!
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+- Search: Find movies and TV shows by title.
+- Trending: Stay updated with the latest trending content.
+- Browse by Genres: Discover movies and TV shows based on your favorite genres.
+- Favorites/Watch List: Save your favorite titles (to local storage) and curate a personal watchlist.
