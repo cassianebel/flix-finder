@@ -134,7 +134,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Navigate to="/search" replace={true} />}
+          element={<Navigate to="/flix-finder/search" replace={true} />}
         ></Route>
         <Route
           path="/flix-finder/search"
@@ -158,7 +158,7 @@ function App() {
         ></Route>
         <Route
           path="/flix-finder/*"
-          element={<Navigate to="/search" replace={true} />}
+          element={<Navigate to="/flix-finder/search" replace={true} />}
         ></Route>
       </Routes>
       <footer className="bg-zinc-800 p-4 flex items-center gap-2 justify-center">
