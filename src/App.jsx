@@ -48,7 +48,7 @@ function App() {
       <header className="film-strip">
         <div className="flex justify-between gap-2 text-chartreuse-300 ">
           <NavLink
-            to="/flix-finder/search"
+            to="/flix-finder/trending"
             className="rounded-full hover:text-chartreuse-200 focus:outline-none focus:ring-1 focus:ring-chartreuse-300 py-1 px-3 "
           >
             <div className="flex gap-2 text-3xl">
