@@ -13,7 +13,7 @@ const Card = ({
   }
   return (
     <button
-      className="flex flex-col bg-zinc-950 text-zinc-200 focus:outline-none focus:ring focus:ring-chartreuse-500 focus:scale-105 hover:scale-105 transition-all ease-in-out"
+      className="flex flex-col justify-between bg-zinc-950 text-zinc-200 focus:outline-none focus:ring focus:ring-chartreuse-500 focus:scale-105 hover:scale-105 transition-all ease-in-out"
       onClick={() => fetchDetails(item.media_type, item.id)}
     >
       {item.media_type === "person" ? (
@@ -27,8 +27,8 @@ const Card = ({
           alt=""
         />
       )}
-      <div className="w-full p-4 flex flex-col-reverse gap-4 space-between">
-        <h2 className="text-lg leading-5 text-center sr-only">
+      <div className="w-full p-4 flex flex-col-reverse gap-4 space-between grow">
+        <h2 className="text-xl leading-5 text-center">
           {item.title ? item.title : item.name}
         </h2>
         <div className="flex justify-between text-sm">

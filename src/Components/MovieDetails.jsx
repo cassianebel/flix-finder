@@ -16,7 +16,7 @@ const MovieDetails = ({
     );
 
     if (trailer) {
-      console.log(trailer.key);
+      // console.log(trailer.key);
       setVideoKey(trailer.key);
     }
   }, [details.videos.results]);
@@ -32,6 +32,8 @@ const MovieDetails = ({
   };
 
   const backgroundColor = getColorForRating(details.vote_average);
+
+  const votePercentage = Math.round(details.vote_average * 10);
 
   return (
     <>
@@ -87,7 +89,7 @@ const MovieDetails = ({
             className="p-1 px-2 rounded-sm text-zinc-950"
             style={{ background: backgroundColor }}
           >
-            {details?.vote_average}
+            {votePercentage}%
           </span>
         </p>
         <p className="flex items-center flex-wrap gap-2">
