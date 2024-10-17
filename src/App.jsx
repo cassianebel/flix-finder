@@ -133,8 +133,8 @@ function App() {
       </header>
       <Routes>
         <Route
-          path="/"
-          element={<Navigate to="/flix-finder/search" replace={true} />}
+          path="/flix-finder/"
+          element={<Navigate to="/flix-finder/trending" replace={true} />}
         ></Route>
         <Route
           path="/flix-finder/search"
