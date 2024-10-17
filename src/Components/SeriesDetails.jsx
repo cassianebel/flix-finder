@@ -33,6 +33,8 @@ const SeriesDetails = ({
 
   const backgroundColor = getColorForRating(details.vote_average);
 
+  const votePercentage = Math.round(details.vote_average * 10);
+
   return (
     <>
       <div className="hidden md:block min-w-72 ">
@@ -90,7 +92,7 @@ const SeriesDetails = ({
             className="p-1 px-2 rounded-sm text-zinc-950"
             style={{ background: backgroundColor }}
           >
-            {details?.vote_average}
+            {votePercentage}%
           </span>
         </p>
         <p className="flex items-center flex-wrap gap-2">
